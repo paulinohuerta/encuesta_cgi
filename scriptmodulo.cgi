@@ -38,8 +38,11 @@ if (!$query->param('envio') eq ""){
       	print $query->br;
 }
 if ($query->param('elecion') ne "") {
-		print $query->h3('Gracias por su aportacion ');
-		print $query->param('elecion');
-	}
+        open T,">>/tmp/resultadoencuesta.txt";
+        print $query->h3('Gracias por su aportacion ');
+        print $query->param('elecion');
+        print T $query->param('elecion');
+}
+
 
 
