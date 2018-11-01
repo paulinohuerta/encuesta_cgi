@@ -2,7 +2,8 @@
 Correcto funcionamiento
 ---------------------------------------------------------------------------------------------------------------------------------
 
-El script sin modulo depende un archivo llamdo fichero.txt
+El script sin modulo depende un archivo llamdo fichero.txt que contiene los tipos de usuarios de la encuesta.
+
 El script con modulo depende del modulo CGI que podemos encontrar en CPAN-->https://metacpan.org/pod/distribution/CGI/lib/CGI.pod
 
           cpan -i CGI
