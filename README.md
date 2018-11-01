@@ -14,6 +14,7 @@ Para ejecutar los dos script debemos de meterlo en la carpeta cgi-bin de nuestro
 
 En el fichero /lib/systemd/system/apache2.service comentar la siguiente linea para que pache pueda escribir en /tmp
           PrivateTmp=true
+
 Reiniciar apache para aplicar los cambios.
 
 
