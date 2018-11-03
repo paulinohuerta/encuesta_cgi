@@ -35,7 +35,7 @@ if($arGet[0] eq "si") {
          <input type=\"submit\" value=\"Enviar\" >";
 }
 ##############################################################################################
-if($arGet[0] eq "Enviar") {
+if($arGet[0] eq "usuario") {
 open T,">>/tmp/resultencuesta";
    @arGet=split("=",$ENV{'QUERY_STRING'});
    $arGet[1]=~ s/%2F/\//g;
@@ -44,11 +44,12 @@ open T,">>/tmp/resultencuesta";
     print "<h2>Elegiste standar,Gracias por su aportacion</h2>";
     print T "standar";
   }
-   if ($arGet[1] eq "root"){
+   if ($arGet[2] eq "root"){
     print "<h2>Elegiste root,gracias por su aportacion</h2>";
     print T "root"
 }
 }
+
 #############################################################################################333
 
 }
